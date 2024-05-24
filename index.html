@@ -489,6 +489,8 @@
 
     // Event listener for keydown events
     document.addEventListener('keydown', (event) => {
+        if (event.target.tagName !== 'BODY') return; // Ensure the event is only handled when the body is the target
+
         if (event.key === 'ArrowRight') {
             // Play the next audio
             playAudio(currentIndex + 1);
