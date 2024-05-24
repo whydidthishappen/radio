@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VVORLDWIDE</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: monospace, sans-serif;
             background-color: black;
             color:black;
             text-align: center;
@@ -14,76 +15,331 @@
             color:yellow;
         }
         .radio-station {
-            margin: 20px 0;
+display: flex;
+padding: 20px 20px 40px 20px;
+flex-direction: column;
+width: 34%;
+text-align: center;
+border: 1px dashed;
+flex: 18%;
         }
         h2 {
             font-weight: 100;
             font-size: 12px;
-            font-family: monospace;
+            
         }
         audio {
-            width:175px;
+            width:100%;
         }
         img {
             margin:30px 0;
         }
+        #stations {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+        .radio-station {
+width: 100%;
+flex: 100%;
+        }
+
+        }
     </style>
 </head>
+
 <body>
-
     <h1>!! VVWORLDWIDE !!</h1>
-
-
     <img src="cat.gif">
+    <div id="stations">
+        <div class="radio-station">
+            <h2>KEXP</h2>
+            <audio id="kexp" controls>
+                <source src="https://kexp.streamguys1.com/kexp160.aac" type="audio/aac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>NTS Radio 1</h2>
+            <audio id="nts1" controls>
+                <source src="https://stream-relay-geo.ntslive.net/stream" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>NTS Radio 2</h2>
+            <audio id="nts2" controls>
+                <source src="https://stream-relay-geo.ntslive.net/stream2" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Dublab</h2>
+            <audio id="dublab" controls>
+                <source src="https://dublab.out.airtime.pro/dublab_a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>WWOZ</h2>
+            <audio id="wwoz" controls>
+                <source src="https://wwoz-sc.streamguys1.com/wwoz-hi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Refuge Worldwide</h2>
+            <audio id="refuge" controls>
+                <source src="http://kcrw.streamguys1.com/kcrw_192k_mp3_news_internet_radio" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>KCRW Music</h2>
+            <audio id="kcrw-music" controls>
+                <source src="https://kcrw.streamguys1.com/kcrw_192k_mp3_on_air" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Eclectic 24</h2>
+            <audio id="kcrw-news" controls>
+                <source src="http://kcrw.streamguys1.com/kcrw_192k_mp3_e24_internet_radio" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>KCRW News</h2>
+            <audio id="kcrw-news" controls>
+                <source src="http://kcrw.streamguys1.com/kcrw_192k_news_on_air" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM DEFCON</h2>
+            <audio controls>
+                <source src="https://somafm.com/defcon130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Deep Space One</h2>
+            <audio controls>
+                <source src="https://somafm.com/deepspaceone130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Drone Zone</h2>
+            <audio controls>
+                <source src="https://somafm.com/dronezone130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Groove Salad</h2>
+            <audio controls>
+                <source src="https://somafm.com/groovesalad130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Illinois Street Lounge</h2>
+            <audio controls>
+                <source src="https://somafm.com/illstreet130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Lush</h2>
+            <audio controls>
+                <source src="https://somafm.com/lush130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM SF10-33</h2>
+            <audio controls>
+                <source src="https://somafm.com/sf1033.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Space Station</h2>
+            <audio controls>
+                <source src="https://somafm.com/spacestation130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM Synphaera Radio</h2>
+            <audio controls>
+                <source src="https://somafm.com/synphaera130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>SomaFM n5MD</h2>
+            <audio controls>
+                <source src="https://somafm.com/n5md130.pls" type="audio/x-scpls">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Subcity</h2>
+            <audio controls>
+                <source src="http://stream.subcity.org:8000/live" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Bad Radio</h2>
+            <audio controls>
+                <source src="http://stream.badradio.org/live" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Bluemars</h2>
+            <audio controls>
+                <source src="http://stream.bluemars.org:8000/bluemars" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Bluemars Cryosleep</h2>
+            <audio controls>
+                <source src="http://stream.bluemars.org:8000/cryosleep" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Bluemars Voices From Within</h2>
+            <audio controls>
+                <source src="http://stream.bluemars.org:8000/voices" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>CPR News Colorado</h2>
+            <audio controls>
+                <source src="http://stream.cpr.org:8000/cprnews" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Dark Ambient Radio</h2>
+            <audio controls>
+                <source src="http://stream.darkambientradio.org:8000/darkambient" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Dogglounge</h2>
+            <audio controls>
+                <source src="http://stream.dogglounge.com:8000/live" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>FIP</h2>
+            <audio controls>
+                <source src="http://direct.fipradio.fr/live/fip-midfi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Frisky Chill</h2>
+            <audio controls>
+                <source src="http://chill.friskyradio.com" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Frisky Deep</h2>
+            <audio controls>
+                <source src="http://deep.friskyradio.com" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Hirschmilch Chillout</h2>
+            <audio controls>
+                <source src="http://hirschmilch.de:7000/chillout.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>KAFM Western CO Public</h2>
+            <audio controls>
+                <source src="http://stream.kafmradio.org:8000/kafmlive128.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h2>KEXP Seattle</h2>
+            <audio controls>
+                <source src="https://kexp.streamguys1.com/kexp160.aac" type="audio/aac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>KRCC Colorado Public</h2>
+            <audio controls>
+                <source src="http://krcc.streamguys1.com/krcc.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>KSPC Claremont</h2>
+            <audio controls>
+                <source src="http://kspc.cuc.claremont.edu:8000/kspc.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>KXLU SoCal Loyola Marymount</h2>
+            <audio controls>
+                <source src="http://kspc.cuc.claremont.edu:8000/kxlu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>NASA Third Rock Radio</h2>
+            <audio controls>
+                <source src="http://stream1.nasa.gov:8000/thirdrock.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Nightwave Plaza</h2>
+            <audio controls>
+                <source src="http://stream.plaza.one/mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>Radio Paradise Global</h2>
+            <audio controls>
+                <source src="http://stream.radioparadise.com/aac-320" type="audio/aac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="radio-station">
+            <h2>BBC</h2>
+            <audio controls>
+                <source src="http://lstn.lv/bbc.m3u8?station=bbc_6music&bitrate=320000" type="audio/aac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!-- 
 
-    <div class="radio-station">
-        <h2>KEXP</h2>
-        <audio id="kexp" controls>
-            <source src="https://kexp.streamguys1.com/kexp160.aac" type="audio/aac">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="radio-station">
+     <div class="radio-station">
         <h2>Worldwide FM</h2>
         <audio id="worldwidefm" controls>
             <source src="https://worldwidefm.net" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
-
-    <div class="radio-station">
-        <h2>NTS Radio 1</h2>
-        <audio id="nts1" controls>
-            <source src="https://stream-relay-geo.ntslive.net/stream" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="radio-station">
-        <h2>NTS Radio 2</h2>
-        <audio id="nts2" controls>
-            <source src="https://stream-relay-geo.ntslive.net/stream2" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="radio-station">
-        <h2>Dublab</h2>
-        <audio id="dublab" controls>
-            <source src="https://dublab.out.airtime.pro/dublab_a" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="radio-station">
-        <h2>WWOZ</h2>
-        <audio id="wwoz" controls>
-            <source src="https://wwoz-sc.streamguys1.com/wwoz-hi.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
     <div class="radio-station">
         <h2>Cashmere Radio</h2>
         <audio id="cashmere" controls>
@@ -91,230 +347,14 @@
             Your browser does not support the audio element.
         </audio>
     </div>
-
-    <div class="radio-station">
-        <h2>Refuge Worldwide</h2>
-        <audio id="refuge" controls>
-            <source src="http://kcrw.streamguys1.com/kcrw_192k_mp3_news_internet_radio" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="radio-station">
-        <h2>KCRW Music</h2>
-        <audio id="kcrw-music" controls>
-            <source src="https://kcrw.streamguys1.com/kcrw_192k_mp3_on_air" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-    <div class="radio-station">
-        <h2>Eclectic 24</h2>
-        <audio id="kcrw-news" controls>
-            <source src="http://kcrw.streamguys1.com/kcrw_192k_mp3_e24_internet_radio" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-    <div class="radio-station">
-        <h2>KCRW News</h2>
-        <audio id="kcrw-news" controls>
-            <source src="http://kcrw.streamguys1.com/kcrw_192k_news_on_air" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-
-    <h2>SomaFM DEFCON</h2>
-    <audio controls>
-        <source src="https://somafm.com/defcon130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Deep Space One</h2>
-    <audio controls>
-        <source src="https://somafm.com/deepspaceone130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Drone Zone</h2>
-    <audio controls>
-        <source src="https://somafm.com/dronezone130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Groove Salad</h2>
-    <audio controls>
-        <source src="https://somafm.com/groovesalad130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Illinois Street Lounge</h2>
-    <audio controls>
-        <source src="https://somafm.com/illstreet130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Lush</h2>
-    <audio controls>
-        <source src="https://somafm.com/lush130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM SF10-33</h2>
-    <audio controls>
-        <source src="https://somafm.com/sf1033.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Space Station</h2>
-    <audio controls>
-        <source src="https://somafm.com/spacestation130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM Synphaera Radio</h2>
-    <audio controls>
-        <source src="https://somafm.com/synphaera130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>SomaFM n5MD</h2>
-    <audio controls>
-        <source src="https://somafm.com/n5md130.pls" type="audio/x-scpls">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Subcity</h2>
-    <audio controls>
-        <source src="http://stream.subcity.org:8000/live" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Bad Radio</h2>
-    <audio controls>
-        <source src="http://stream.badradio.org/live" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Bluemars</h2>
-    <audio controls>
-        <source src="http://stream.bluemars.org:8000/bluemars" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Bluemars Cryosleep</h2>
-    <audio controls>
-        <source src="http://stream.bluemars.org:8000/cryosleep" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Bluemars Voices From Within</h2>
-    <audio controls>
-        <source src="http://stream.bluemars.org:8000/voices" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>CPR News Colorado</h2>
-    <audio controls>
-        <source src="http://stream.cpr.org:8000/cprnews" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Dark Ambient Radio</h2>
-    <audio controls>
-        <source src="http://stream.darkambientradio.org:8000/darkambient" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Dogglounge</h2>
-    <audio controls>
-        <source src="http://stream.dogglounge.com:8000/live" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>FIP</h2>
-    <audio controls>
-        <source src="http://direct.fipradio.fr/live/fip-midfi.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Frisky Chill</h2>
-    <audio controls>
-        <source src="http://chill.friskyradio.com" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Frisky Deep</h2>
-    <audio controls>
-        <source src="http://deep.friskyradio.com" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Hirschmilch Chillout</h2>
-    <audio controls>
-        <source src="http://hirschmilch.de:7000/chillout.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>KAFM Western CO Public</h2>
-    <audio controls>
-        <source src="http://stream.kafmradio.org:8000/kafmlive128.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
     <h2>KCHUNG</h2>
     <audio controls>
         <source src="http://kchungradio.org:8000/kchung" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <h2>KEXP Seattle</h2>
-    <audio controls>
-        <source src="https://kexp.streamguys1.com/kexp160.aac" type="audio/aac">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>KRCC Colorado Public</h2>
-    <audio controls>
-        <source src="http://krcc.streamguys1.com/krcc.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>KSPC Claremont</h2>
-    <audio controls>
-        <source src="http://kspc.cuc.claremont.edu:8000/kspc.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>KXLU SoCal Loyola Marymount</h2>
-    <audio controls>
-        <source src="http://kspc.cuc.claremont.edu:8000/kxlu.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>NASA Third Rock Radio</h2>
-    <audio controls>
-        <source src="http://stream1.nasa.gov:8000/thirdrock.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-
-    <h2>Nightwave Plaza</h2>
-    <audio controls>
-        <source src="http://stream.plaza.one/mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Radio Paradise Global</h2>
-    <audio controls>
-        <source src="http://stream.radioparadise.com/aac-320" type="audio/aac">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>BBC</h2>
-    <audio controls>
-        <source src="http://lstn.lv/bbc.m3u8?station=bbc_6music&bitrate=320000" type="audio/aac">
-        Your browser does not support the audio element.
-    </audio>
-
+-->
+    </div>
 </body>
+
 </html>
