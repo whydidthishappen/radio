@@ -436,6 +436,33 @@
             });
         });
     });
+
+
+     // Get all audio elements
+        let currentIndex = 0;
+
+        // Function to play the audio at the current index
+        function playAudio(index) {
+            if (index >= 0 && index < audios.length) {
+                audios.forEach(audio => audio.pause()); // Pause all audios
+                audios[index].play(); // Play the selected audio
+                currentIndex = index; // Update the current index
+            }
+        }
+
+        // Event listener for keydown events
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                // Play the next audio
+                playAudio(currentIndex + 1);
+            } else if (event.key === 'ArrowLeft') {
+                // Play the previous audio
+                playAudio(currentIndex - 1);
+            }
+        });
+
+        // Initial play (optional)
+        playAudio(currentIndex);
     </script>
 </body>
 
