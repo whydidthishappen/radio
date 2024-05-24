@@ -16,13 +16,13 @@
             color:yellow;
         }
         .radio-station {
-display: flex;
-padding: 20px 20px 40px 20px;
-flex-direction: column;
-width: 34%;
-text-align: center;
-border: 1px dashed;
-flex: 18%;
+            display: flex;
+            padding: 20px 20px 40px 20px;
+            flex-direction: column;
+            width: 34%;
+            text-align: center;
+            border: 1px dashed;
+            flex: 18%;
         }
         h2 {
             font-weight: 100;
@@ -54,11 +54,13 @@ flex: 18%;
             text-decoration: underline;
         }
         @media (max-width: 960px) {
-        .radio-station {
-            width: 100%;
-            flex: 100%;
-        }
-
+            body {
+                padding:0;
+            }
+            .radio-station {
+                width: 100%;
+                flex: 100%;
+            }
         }
     </style>
 </head>
