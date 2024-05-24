@@ -438,7 +438,7 @@
     });
 
 
-     let currentIndex = 0;
+    let currentIndex = 0;
 
         // Function to play the audio at the current index
         function playAudio(index) {
@@ -460,6 +460,12 @@
             }
         }
 
+        // Function to play a random audio
+        function playRandomAudio() {
+            const randomIndex = Math.floor(Math.random() * audios.length);
+            playAudio(randomIndex);
+        }
+
         // Event listener for keydown events
         document.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowRight') {
@@ -472,6 +478,9 @@
                 // Pause or play the current audio
                 event.preventDefault(); // Prevent the default action of the space bar
                 pauseAudio();
+            } else if (event.key === 'ArrowUp') {
+                // Play a random audio
+                playRandomAudio();
             }
         });
 
