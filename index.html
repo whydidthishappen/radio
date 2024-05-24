@@ -365,6 +365,21 @@ flex: 100%;
 
 -->
     </div>
+    <script>
+    // Get all audio elements
+    const audios = document.querySelectorAll('audio');
+
+    audios.forEach(audio => {
+        audio.addEventListener('play', () => {
+            // Pause all other audio elements
+            audios.forEach(otherAudio => {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                }
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
